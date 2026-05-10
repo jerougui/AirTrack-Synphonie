@@ -1,0 +1,34 @@
+{
+  "audio": {
+    "backend": "MIDI",
+    "defaultInstrument": 73,
+    "volume": 0.8
+  },
+  "mapping": {
+    "minSpeed": 0.0,
+    "maxSpeed": 3.0,
+    "speedToPitch": true,
+    "directionToInstrument": false,
+    "accelerationToEffect": false,
+    "noteDebounceMs": 100,
+    "scale": "pentatonic",
+    "baseNote": 60,
+    "instruments": ["flute"]
+  },
+  "detection": {
+    "confidenceThreshold": 0.5,
+    "maxDetections": 10
+  },
+  "tracker": {
+    "kalmanProcessNoise": 0.05,
+    "kalmanMeasurementNoise": 0.1,
+    "iouThreshold": 0.3,
+    "maxLostFrames": 5
+  },
+  "ui": {
+    "showTrajectory": true,
+    "trajectoryLength": 60,
+    "showFps": true,
+    "showNote": true
+  }
+}

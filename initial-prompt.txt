@@ -1,0 +1,149 @@
+/opsx-propose  "initialise une application sous android permettant de lancer la camera pour identifier et suivre un objet preselectionné"
+
+application simple en apk avec les technos les plus simple à comprendre et réutilisé
+
+Rules : je suis sous windows donc les instructions en powershell
+écrit les specs qu'en français sauf pour les mots techniques
+
+
+//-------------------------
+Prompt amélioré : 
+----------------------------
+spec:
+  name: "AirTrack Synphonie"
+  version: "1.0"
+  description: >
+    Application Android gratuite permettant de détecter, suivre et analyser en temps réel
+    la trajectoire d’un objet aérien rapide (cerf-volant, drone, ballon, oiseau) via la caméra
+    du smartphone. Le mouvement (position, vitesse, direction) est converti en événements
+    musicaux. Les notes, instruments et règles de mapping sont entièrement configurables via
+    un fichier externe. Le projet utilise uniquement des technologies gratuites.
+
+  goals:
+    - Suivi d’un objet aérien rapide en temps réel via CameraX
+    - Détection + tracking via ML Kit (Object Detection & Tracking)
+    - Estimation de position 2D normalisée
+    - Estimation de vitesse (delta position / delta temps)
+    - Estimation de direction (angle)
+    - Conversion mouvement → musique (notes, intensité, instrument)
+    - Lecture audio via MIDI ou SoundPool
+    - Fichier de configuration externe (JSON) pour personnaliser :
+        * instruments
+        * gammes
+        * notes
+        * règles de mapping
+    - Fonctionnement 100% offline, 0€
+
+  constraints:
+    - Aucun service cloud payant
+    - Aucun backend obligatoire
+    - Fonctionne sur Android 8+
+    - 30–60 FPS minimum
+    - Code modulaire, testable, documenté
+    - Architecture claire (SDD)
+
+  tech_stack:
+    language: Kotlin
+    camera: CameraX
+    ai: ML Kit Object Detection & Tracking (STREAM_MODE)
+    math:
+      - Kalman Filter (prédiction position/vitesse)
+      - Calcul direction (atan2)
+    audio:
+      - Android MIDI API (notes dynamiques)
+      - SoundPool (samples d’instruments)
+    optional:
+      - OpenCV (optical flow pour objets très rapides)
+
+  modules:
+    camera:
+      description: >
+        Gère CameraX, PreviewView, récupération des frames, conversion en InputImage.
+      responsibilities:
+        - Initialiser CameraX
+        - Fournir flux d’images à l’analyseur
+        - Stabilisation optionnelle
+    detection:
+      description: >
+        Wrapper ML Kit pour détecter et suivre un objet.
+      responsibilities:
+        - Détection d’objet
+        - Suivi via trackingId
+        - Extraction bounding box
+    tracking:
+      description: >
+        Calcule position, vitesse, direction, accélération.
+      responsibilities:
+        - Centre de la bounding box
+        - Position normalisée (0–1)
+        - Vitesse = delta(position)/delta(t)
+        - Direction = atan2(dy, dx)
+        - Kalman Filter pour prédiction
+    mapping:
+      description: >
+        Convertit mouvement → événement musical.
+      responsibilities:
+        - Charger fichier JSON de configuration
+        - Mapper vitesse → note
+        - Mapper direction → instrument
+        - Mapper accélération → effets
+        - Générer un MusicEvent
+    audio:
+      description: >
+        Joue les notes via MIDI ou SoundPool.
+      responsibilities:
+        - Synthèse MIDI
+        - Gestion des instruments
+        - Effets (vibrato, pitch bend)
+    ui:
+      description: >
+        Affiche overlay graphique.
+      responsibilities:
+        - Bounding box
+        - Trajectoire
+        - Indicateurs de vitesse et note jouée
+
+  config_file:
+    format: JSON
+    example: |
+      {
+        "instrument": "flute",
+        "scale": "pentatonic",
+        "notes": ["C4", "D4", "E4", "G4", "A4"],
+        "minSpeed": 0.0,
+        "maxSpeed": 3.0,
+        "mapping": {
+          "speedToPitch": true,
+          "directionToInstrument": false,
+          "accelerationToEffect": true
+        }
+      }
+
+  data_flow:
+    - CameraX capture frame
+    - ML Kit détecte objet + trackingId
+    - Tracking calcule position/vitesse/direction
+    - Mapping convertit mouvement → MusicEvent
+    - Audio joue la note
+    - UI affiche overlay
+
+  deliverables:
+    - Structure complète du projet Android Studio
+    - Code CameraX + ML Kit fonctionnel
+    - Module Tracking avec Kalman Filter
+    - Module Mapping configurable
+    - Module Audio (MIDI + SoundPool)
+    - Exemple de fichier JSON
+    - Documentation d’installation
+    - Exemple d’écran principal
+    - Tests unitaires pour mapping et tracking
+
+  acceptance_criteria:
+    - L’application détecte un objet en mouvement en moins de 200 ms
+    - Le tracking reste stable même en mouvement rapide
+    - La vitesse est calculée avec une erreur < 10%
+    - Une note est jouée à chaque changement significatif de vitesse
+    - Le fichier JSON modifie réellement les instruments/notes
+    - L’application fonctionne offline
+    - Aucun coût d’utilisation
+

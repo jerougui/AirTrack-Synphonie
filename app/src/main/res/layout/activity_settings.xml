@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="Connexion UDP"
+        android:key="udp_settings">
+
+        <EditTextPreference
+            android:key="udp_ip"
+            android:title="Adresse IP"
+            android:summary="Adresse IP de destination"
+            android:defaultValue="192.168.1.100"
+            android:inputType="text" />
+
+        <EditTextPreference
+            android:key="udp_port"
+            android:title="Port UDP"
+            android:summary="Port de destination"
+            android:defaultValue="5005"
+            android:inputType="number" />
+
+        <EditTextPreference
+            android:key="udp_frequency"
+            android:title="Fréquence d'envoi (Hz)"
+            android:summary="Nombre de paquets par seconde"
+            android:defaultValue="30"
+            android:inputType="number" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Détection"
+        android:key="detection_settings">
+
+        <ListPreference
+            android:key="detection_interval"
+            android:title="Intervalle de détection"
+            android:summary="Fréquence de réévaluation de la détection"
+            android:entries="@array/detection_interval_entries"
+            android:entryValues="@array/detection_interval_values"
+            android:defaultValue="2000" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Tracker"
+        android:key="tracker_settings">
+
+        <ListPreference
+            android:key="tracker_type"
+            android:title="Type de tracker"
+            android:summary="Algorithme de suivi utilisé"
+            android:entries="@array/tracker_type_entries"
+            android:entryValues="@array/tracker_type_values"
+            android:defaultValue="iou" />
+
+        <ListPreference
+            android:key="iou_threshold"
+            android:title="Seuil IoU"
+            android:summary="Seuil de correspondance IoU"
+            android:entries="@array/iou_threshold_entries"
+            android:entryValues="@array/iou_threshold_values"
+            android:defaultValue="0.3" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
