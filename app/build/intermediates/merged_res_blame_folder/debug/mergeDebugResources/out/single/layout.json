@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-mergeDebugResources-3:\\layout\\info_bottom_sheet.xml",
+        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\info_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-mergeDebugResources-3:\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.objectdetection.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-mergeDebugResources-3:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\fragment_gallery.xml"
+    }
+]
