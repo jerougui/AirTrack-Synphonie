@@ -182,6 +182,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
         selectedDetectionIndex?.let { index ->
             val detections = results?.detections()
             if (detections != null && index < detections.size) {
+
                 val detection = detections[index]
                 val boxRect = RectF(
                     detection.boundingBox().left,
@@ -189,6 +190,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
                     detection.boundingBox().right,
                     detection.boundingBox().bottom
                 )
+
                 val matrix = Matrix()
                 matrix.postTranslate(-outputWidth / 2f, -outputHeight / 2f)
                 matrix.postRotate(outputRotate.toFloat())
@@ -203,70 +205,80 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
                 val centerY = (boxRect.top + boxRect.bottom) / 2
                 val currentCenter = PointF(centerX * scaleFactor, centerY * scaleFactor)
 
-                // Calculate velocity if we have a previous center
+                // Velocity
                 val nowNanos = System.nanoTime()
                 var velocityText = ""
                 lastSelectedCenter?.let { lastCenter ->
-                    val timeDeltaSec = (nowNanos - lastSelectedTimestampNanos) / 1_000_000_000f
-                    if (timeDeltaSec > 0) {
-                        val vx = (currentCenter.x - lastCenter.x) / timeDeltaSec
-                        val vy = (currentCenter.y - lastCenter.y) / timeDeltaSec
-                        velocityText = String.format("vx: %.1f vy: %.1f px/s", vx, vy)
+                    val dt = (nowNanos - lastSelectedTimestampNanos) / 1_000_000_000f
+                    if (dt > 0) {
+                        val vx = (currentCenter.x - lastCenter.x) / dt
+                        val vy = (currentCenter.y - lastCenter.y) / dt
+                        velocityText = "Velocity: %.1f %.1f px/s".format(vx, vy)
                     }
                 }
-                // Update last center and timestamp for next frame
                 lastSelectedCenter = currentCenter
                 lastSelectedTimestampNanos = nowNanos
 
-                // Position text (we'll show x, y in view coordinates)
-                val positionText = String.format("x: %.1f y: %.1f", currentCenter.x, currentCenter.y)
+                val positionText = "Position: %.1f %.1f".format(currentCenter.x, currentCenter.y)
 
-                // Draw background for tracking data (top-left corner)
-                val trackingText = "Pos: $positionText\n$velocityText"
-                trackingBackgroundPaint.getTextBounds(trackingText, 0, trackingText.length, bounds)
-                val trackingWidth = bounds.width()
-                val trackingHeight = bounds.height()
+                // --- TRACKING BOX LAYOUT ---
                 val trackingMargin = 24f
-                val trackingPadding = 12f
+                val trackingPadding = 16f
+
+                val lines = listOf(positionText, velocityText).filter { it.isNotEmpty() }
+
+                val fm = trackingTextPaint.fontMetrics
+                val lineHeight = fm.bottom - fm.top
+
+                val boxWidth = lines.maxOf { trackingTextPaint.measureText(it) }
+                val boxHeight = lines.size * lineHeight + trackingPadding * 2
+
+                // Draw background
                 canvas.drawRoundRect(
                     trackingMargin,
                     trackingMargin,
-                    trackingMargin + trackingWidth + trackingPadding * 2,
-                    trackingMargin + trackingHeight + trackingPadding * 2,
-                    8f, 8f,
+                    trackingMargin + boxWidth + trackingPadding * 2,
+                    trackingMargin + boxHeight,
+                    12f, 12f,
                     trackingBackgroundPaint
                 )
-                // Draw tracking text
-                var y = trackingMargin + trackingPadding + trackingTextPaint.textSize
-                trackingBackgroundPaint.getTextBounds("Pos: $positionText", 0, "Pos: $positionText".length, bounds)
-                val lineHeight = bounds.height()
-                canvas.drawText("Pos: $positionText", trackingMargin + trackingPadding, y, trackingTextPaint)
-                y += lineHeight
-                if (velocityText.isNotEmpty()) {
-                    canvas.drawText(velocityText, trackingMargin + trackingPadding, y, trackingTextPaint)
+
+                // Draw lines
+                var y = trackingMargin + trackingPadding - fm.top
+                lines.forEach { line ->
+                    canvas.drawText(line, trackingMargin + trackingPadding, y, trackingTextPaint)
+                    y += lineHeight
                 }
 
-                // Draw stop button (top-right corner)
-                val stopButtonWidth = 180f
-                val stopButtonHeight = 50f
-                val stopButtonMargin = 24f
-                val stopButtonLeft = width - stopButtonWidth - stopButtonMargin
-                val stopButtonTop = stopButtonMargin
-                val stopButtonRect = RectF(stopButtonLeft, stopButtonTop,
-                        stopButtonLeft + stopButtonWidth, stopButtonTop + stopButtonHeight)
-                // Draw button with rounded corners
-                // Use pressed color if pressed
-                if (isStopButtonPressed) {
-                    stopButtonPaint.color = ContextCompat.getColor(context!!, R.color.mp_variant)
-                } else {
-                    stopButtonPaint.color = ContextCompat.getColor(context!!, R.color.mp_primary)
-                }
-                canvas.drawRoundRect(stopButtonRect, 12f, 12f, stopButtonPaint)
-                val stopButtonText = "Stop Tracking"
-                stopButtonTextPaint.getTextBounds(stopButtonText, 0, stopButtonText.length, bounds)
-                val textX = stopButtonLeft + stopButtonWidth / 2f
-                val textY = stopButtonTop + stopButtonHeight / 2f + bounds.height() / 2f
-                canvas.drawText(stopButtonText, textX, textY, stopButtonTextPaint)
+             // --- STOP BUTTON ---
+            val stopButtonWidth = 120f
+            val stopButtonHeight = 70f
+            val stopButtonMargin = 24f
+
+            val left = width - stopButtonWidth - stopButtonMargin
+            val top = stopButtonMargin
+            val rect = RectF(left, top, left + stopButtonWidth, top + stopButtonHeight)
+
+            stopButtonPaint.color = if (isStopButtonPressed)
+                ContextCompat.getColor(context!!, R.color.mp_variant)
+            else
+                ContextCompat.getColor(context!!, R.color.mp_primary)
+
+            canvas.drawRoundRect(rect, 12f, 12f, stopButtonPaint)
+
+            val iconSize = stopButtonHeight * 0.40f
+            val iconLeft = left + (stopButtonWidth - iconSize) / 2f
+            val iconTop = top + (stopButtonHeight - iconSize) / 2f
+            val iconRect = RectF(iconLeft, iconTop, iconLeft + iconSize, iconTop + iconSize)
+
+            val iconPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+                color = Color.RED
+                style = Paint.Style.FILL
+            }
+
+            canvas.drawRect(iconRect, iconPaint)
+
+
             }
         }
     }

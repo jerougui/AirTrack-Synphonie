@@ -1,118 +1,114 @@
 [
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_cerf_volant_banner2.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\cerf_volant_banner2.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_media_pipe_banner.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\media_pipe_banner.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\color_bg_nav_item.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\color\\bg_nav_item.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_plus.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_plus.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\layout_fragment_gallery.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\fragment_gallery.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/color_bg_nav_item.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/color/bg_nav_item.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_cerf_volant_banner.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\cerf_volant_banner.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/layout_fragment_camera.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/layout/fragment_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_icn_chevron_up.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\icn_chevron_up.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_media_pipe_banner.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/media_pipe_banner.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\menu_menu_bottom_nav.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\menu\\menu_bottom_nav.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_baseline_add_24.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_baseline_add_24.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_icn_chevron_up.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/icn_chevron_up.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_minus.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_minus.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_baseline_photo_camera_24.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_baseline_photo_camera_24.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\layout_fragment_camera.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\fragment_camera.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/layout_fragment_gallery.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/layout/fragment_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_baseline_photo_library_24.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_baseline_photo_library_24.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\layout_info_bottom_sheet.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\info_bottom_sheet.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_baseline_photo_library_24.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_baseline_photo_library_24.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_cerf_volant_banner.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/cerf_volant_banner.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_baseline_add_24.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_baseline_add_24.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\navigation\\nav_graph.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/layout_info_bottom_sheet.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/layout/info_bottom_sheet.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_minus.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_minus.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\color_selector_ic.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\color\\selector_ic.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_baseline_photo_camera_24.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_baseline_photo_camera_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_plus.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_plus.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-mdpi/ic_launcher.png"
     },
     {
         "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_cerf_volant_banner2.xml.flat",
         "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/cerf_volant_banner2.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/color_selector_ic.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/color/selector_ic.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/menu_menu_bottom_nav.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/menu/menu_bottom_nav.xml"
     },
     {
-        "merged": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-debug-4:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Administrateur\\.gradle\\daemon\\8.14.3\\com.google.mediapipe.examples.objectdetection.app-main-6:\\layout\\activity_main.xml"
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.google.mediapipe.examples.objectdetection.app-debug-4:/navigation_nav_graph.xml.flat",
+        "source": "com.google.mediapipe.examples.objectdetection.app-main-6:/navigation/nav_graph.xml"
     }
 ]

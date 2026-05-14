@@ -1,4 +1,4 @@
-#Tue May 12 21:51:29 CEST 2026
+#Thu May 14 10:00:22 CEST 2026
 base.0=C\:\\ENVDEV\\depot\\PetProject\\apk\\object_detection\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\ENVDEV\\depot\\PetProject\\apk\\object_detection\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\ENVDEV\\depot\\PetProject\\apk\\object_detection\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
