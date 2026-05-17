@@ -1,0 +1,12 @@
+# Gradle & build
+app/build/
+build/
+
+# IDE
+.idea/
+.gradle/
+.vscode/
+
+# Local config
+local.properties
+*.iml
